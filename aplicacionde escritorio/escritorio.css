@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ body {
+  background-image: url(imagenes/imagen\ degradada.PNG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.contenedorcabesera {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background: rgb(0, 0, 31);
+  color: var(--textoblanco);
+
+}
+  i{
+    font-size: 40px;
+}
+#menuamburgesa {
+    color: rgb(80, 244, 10);
+}
+.titulo {
+  font-size: 30px;
+  background-image: linear-gradient(to right, green, yellow, red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.menu > a + input {
+  position: absolute;
+  left: -60px;
+  z-index: 20;
+  width: 10%;
+  transition: all 1s;
+}
+.menu{
+  display: none;
+}
+.menu a:hover {
+  left: 0;
+  background: rgb(239, 237, 242);
+  color: black;
+  font-weight: bold;
+  
+}
+.menu input:hover {
+  left: 0;
+  font-weight: bold;
+}
+input{
+  height: 30px;
+}
+.uno {
+  top: 100px;
+}
+.dos {
+  top: 330px;
+}
+.tres {
+  top: 400px;
+}
+.cuatro {
+  top: 460px;
+}
+.sinco {
+  top: 530px;
+}
+.seis {
+  top: 600px;
+}
+.siete {
+    top: 260px;
+  }
+  .ocho {
+    top: 190px;
+  }
+  .nueve {
+    bottom: 20px;
+  }
+button {
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  background: transparent;
+  background-image: url(imagenes/imagen\ degradada.PNG);
+  color: var(--textoblanco);
+}
+button:is(:focus) {
+  transition: all 3s;
+  box-shadow: 1px 5px 3px blue;
+  opacity: 0;
+}
+
+img {
+  z-index: 1;
+  left: 40%;
+  width: 40%;
+  bottom: 30%;
+  position: absolute;
+}
+:is(a, aside) {
+  display: block;
+  text-decoration: none;
+}
+a {
+  color: aqua;
+  padding: 15px 10px;
+font-size: 20px;
+}
+aside {
+  float: left;
+  width: 10%;
+  height: 90vh;
+  background: rgb(0, 0, 31);
+}
+
+
+@media screen and (max-width: 480px) {
+  .contenedorcabesera {
+    width: 100%;
+    gap: 10px;
+    background: rgb(0, 0, 31);
+  }
+  aside {
+    width: 25%;
+    height: 90vh;
+    background: rgb(0, 0, 31);
+  }
+  a {
+    font-weight: bold;
+  }
+} 

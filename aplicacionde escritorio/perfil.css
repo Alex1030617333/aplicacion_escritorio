@@ -1,0 +1,29 @@
+*{ 
+    position: 0;
+    margin: 0;
+}
+:root{
+    --colorTexto:white;
+}
+
+.menu {
+ background:url(imagenes/imagen\ degradada.PNG);
+ top: 300px;
+ left: 600px;
+    width:20%;
+    height: 250px;
+    position: absolute;
+    color:var(--colorTexto);
+    padding: 10px;
+    border-radius: 10px;
+    border: 10px solid rgb(1, 7, 27)
+}
+img{
+    width: 3rem;
+    border-radius: 24px ;
+    border:2px solid yellow;;
+}
+a{
+    text-decoration: none;
+    color:var(--colorTexto);
+}
